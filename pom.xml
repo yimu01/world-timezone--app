@@ -32,7 +32,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>${mule.maven.plugin.version}</version>
+				<version>3.4.0</version>
 				<extensions>true</extensions>
                 <configuration>
 				<cloudHubDeployment>
@@ -42,7 +42,7 @@
 				<Workers>1</Workers>
 				<WorkerType>Micro</WorkerType>
 				<applicationName>cicd-githab-timezoneFlow</applicationName>
-				<muleVersion>4.3.0</muleVersion>
+				<muleVersion>${app.runtime}</muleVersion>
 				</cloudHubDeployment>
 				</configuration>
 			</plugin>
