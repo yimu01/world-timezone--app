@@ -9,11 +9,6 @@
     <packaging>mule-application</packaging>
 
 	<name>cicd-githab-timezone</name>
-	
-	
-	
-	
-
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -32,7 +27,7 @@
 			<plugin>
 				<groupId>org.mule.tools.maven</groupId>
 				<artifactId>mule-maven-plugin</artifactId>
-				<version>3.4.0</version>
+				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
                 <configuration>
 				<cloudHubDeployment>
@@ -42,7 +37,8 @@
 				<Workers>1</Workers>
 				<WorkerType>Micro</WorkerType>
 				<applicationName>cicd-githab-timezoneFlow</applicationName>
-				<muleVersion>${app.runtime}</muleVersion>
+				<muleVersion>4.3.0</muleVersion>
+				<ObjectStoreV2>true</ObjectStoreV2>
 				</cloudHubDeployment>
 				</configuration>
 			</plugin>
