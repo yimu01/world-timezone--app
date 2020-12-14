@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/htt
 		<http:request-connection host="worldtimeapi.org" port="80" />
 	</http:request-config>
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="77ea9154-c61c-45ac-bd66-22293233803a" basePath="/timezone" >
-		<http:listener-connection host="0.0.0.0" port="8082" />
+		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
 	<flow name="cicd-githab-timezoneFlow" doc:id="d4198617-e03e-45c9-b066-4c8346ad08da" >
 		<http:listener doc:name="Listener" doc:id="9e3cfd2d-c383-4b7b-a9be-166ee1e37c1e" config-ref="HTTP_Listener_config" path="/{region}/{city}"/>
